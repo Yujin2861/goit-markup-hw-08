@@ -1,0 +1,125 @@
+/*ФУТЕР*/
+
+.footer {
+    /*display: flex;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 252px;*/
+    padding: 60px 0;
+    background-color:$hero-bg-color;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        /*padding: 60px 15px;
+        width: 1200px;*/
+    }
+}
+
+.footer-contact {
+    margin-right: 70px;
+}
+
+.sociale, 
+.footer-form
+ {
+    padding-top: 12px;
+}
+.sociale {
+    margin-right: 93px;
+}
+
+.strong {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: $hero-text-color;
+}
+.mail-form {
+    display: flex; 
+    height: 50px;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+        display: block;
+        height: 100%;
+    }
+}
+
+.mail-form__input {
+    display: block;
+    min-width: 358px;
+    background-color: $hero-bg-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.250;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: $footer-link-color;
+}
+
+.mail-form__svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    margin-right: 28px;
+}
+
+.button-mail-form {
+    @extend %button;
+    min-width: 200px;
+    position: relative;
+    margin-left: 12px;
+    padding-left: 28px;
+    padding-right: 28px;
+    display: flex;
+    align-items: center;
+    color: $hero-text-color;
+    /*background-color:var(--accent-color);*/
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    /*border-radius: 4px;*/
+    /*border: none;*/
+    /*cursor: pointer;*/
+    /*transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+}
+
+.footer-nav {
+    @extend %list;
+    display: inline-block; 
+}
+.footer-nav__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-nav__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7143;
+    letter-spacing: 0.03em;
+    color:$footer-link-color;
+    transition: $cubic-bezier;
+
+    &:hover,
+    &:focus {
+    color: $hero-text-color;
+    }
+}
+
+/*.sociale-set__link--footer:hover {
+    background-color: var(--accent-color);  
+}*/
+
+.footer-nav__map {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7143;
+    color:$hero-text-color;
+    /* or 171% */
+    letter-spacing: 0.03em;
+}

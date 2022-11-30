@@ -1,0 +1,87 @@
+/*заголовок НАША КОМАНДА*/
+.section-team {
+    background-color:$team-bg-color;
+}
+
+.team-set { 
+    @extend %list;
+    display: flex; 
+    margin-left: -30px;
+    /*list-style: none;*/
+} 
+
+.team-set__item {
+    margin-left: 30px;
+    /*flex-basis: calc(100% / 4 - 30px);*/
+    width: calc((100% - 90px) / 4);
+    text-align: center;
+    background:$hero-text-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+/*.team-set__item:not(:last-child) {
+    margin-right:30px;  */ 
+.comand-box {
+    padding: 30px 32px;
+    background-color: $hero-text-color;
+}
+.comand-box__title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1875;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:$title-text-color;
+}
+
+.comand-box__discrip {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.1875;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:$primery-text-color;
+}
+
+.sociale-set {
+    @extend %list;
+    display: flex;
+    justify-content: center;  
+}
+.sociale-set__item:not(:last-child) {
+    margin-right:10px;   
+}
+.sociale-set__link {
+    display: block;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color:$svg-color;
+
+    &:hover {
+        background-color:$accent-color;
+        color:$hero-text-color;
+    }
+
+    &--footer {
+        /*display: block;
+        padding: 12px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        color: var(--svg-color);
+        /*то что отличает блок*/
+        background-color: rgba(255, 255, 255, 0.1);
+        color: $hero-text-color;
+        transition: $cubic-bezier;
+    }
+    
+}
+
+.cosiale-set__icon {
+    fill: currentColor;
+}
+

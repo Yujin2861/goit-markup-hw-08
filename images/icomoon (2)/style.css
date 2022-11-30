@@ -1,0 +1,56 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.email {
+  width: 1.3330078125em;
+}
+
+.antena {
+  width: 0.9423828125em;
+}
+
+.group1 {
+  width: 2.0888671875em;
+}
+
+.group2 {
+  width: 1.3408203125em;
+}
+
+.group3 {
+  width: 2.0234375em;
+}
+
+.group4 {
+  width: 1.0712890625em;
+}
+
+.group5 {
+  width: 0.76953125em;
+}
+
+.group6 {
+  width: 0.8720703125em;
+}
+
+.Rectangle {
+  width: 2.25em;
+}
+
+.tell {
+  width: 0.625em;
+}

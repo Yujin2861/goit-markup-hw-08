@@ -1,0 +1,29 @@
+.clients-set {
+    @extend %list;
+    display: flex;
+    justify-content: center; 
+    margin-left: -30px;
+}
+
+.clients-set__item {
+    width: calc((100% - 150px) / 6);
+    margin-left: 30px;
+}
+
+.clients-set__link {
+    display: flex;
+    justify-content: center;
+    padding: 15px 31px;
+    border: 1px solid $svg-color;
+    border-radius: 4px;
+    color: inherit;
+    transition: $cubic-bezier;
+
+    &:hover {
+        color: $accent-color;
+        border-color: $accent-color;
+    }
+}
+.clients-set__icon {
+    fill: currentColor;
+}

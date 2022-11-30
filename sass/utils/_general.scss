@@ -1,0 +1,67 @@
+
+body {
+    color: $primery-text-color;
+    font-family: $main-font;
+    
+}
+/*СХОВАВ ВСЮДИ ТОЧКИ ТА ПІДКРЕСЛЕНЯ*/
+ 
+.site-nav__link, 
+.auth-nav__link, 
+.footer-nav__link, 
+.footer-nav__map, 
+.filter-set__link {
+    list-style: none;
+    text-decoration: none;
+}
+
+/*СБРОС СТИЛЕЙ*/
+%list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.section {
+    padding: 94px 0;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:$title-text-color;
+}
+
+
+%button { /*общие стили всех кнопок*/
+    background-color: $accent-color;
+    border: none;
+    border-radius: 4px;
+    transition: $cubic-bezier;
+    text-align: center;
+    cursor: pointer;  
+}
+
+

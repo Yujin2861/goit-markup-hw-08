@@ -1,0 +1,24 @@
+.logo {
+    color:$accent-color;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    &--footer {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+}
+
+
+.logo__text{
+    color:$logo-text-color;   
+
+    &--invers{
+    color:$hero-text-color;
+    }
+}

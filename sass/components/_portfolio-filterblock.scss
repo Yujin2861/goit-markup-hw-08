@@ -1,0 +1,81 @@
+.filter-discr {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+}
+.filter-set {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;  
+}
+/*количество маржинов в строке * на значение маржина в пикселях  / кол-элкментов в строке*/
+.filter-set__item {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    /*margin-right: 30px;
+    margin-bottom: 30px;*/
+    /*background-color: tomato;*/
+    transition: $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+
+    }
+    &:nth-child(3n){
+        margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+    }
+}
+
+.filter-discr__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color:$title-text-color;
+}
+.filter-disc__text {
+    font-size: 16px;
+    line-height: 1.875;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.03em;
+    color:$primery-text-color;
+}
+
+.filter-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.box-textonimage {
+    display: flex;
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.9); 
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    top:0;
+    left: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    transform: translateY(100%);
+    transition: $cubic-bezier;  
+
+    .filter-box:hover & {
+        /*opacity: 1;*/
+        transform: translateY(0%);
+    }
+    /*opacity: 0;*/
+}   
+
+.box-textonimage__text {
+    font-size: 18px;
+    line-height: 1.555;
+    letter-spacing: 0.03em;
+    color:$hero-text-color;
+}
