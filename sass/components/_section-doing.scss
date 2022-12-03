@@ -1,15 +1,31 @@
 .section-doing {
+    
     padding-top: 0;
-    /*background-color:var(--hero-text-color);*/
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 1140px) {
+        display: none;
+    }
+      
 }
 
 .doing-set {  
     @extend %list; 
     display: flex; 
 }
+
 .doing-set__item {
     position: relative;
+    width: 33.3333%;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+   }
+   
 }
+
 .doing-set__box {
     position: absolute;
     background-color: $doing-bg;
@@ -31,8 +47,6 @@
     color: $hero-text-color;
 }
 
-.doing-set__item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 

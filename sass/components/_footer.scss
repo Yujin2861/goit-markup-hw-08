@@ -1,19 +1,14 @@
 /*ФУТЕР*/
 
 .footer {
-    /*display: flex;
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 252px;*/
+   
     padding: 60px 0;
     background-color:$hero-bg-color;
 
     &__container {
-        display: flex;
+        //display: flex;
         justify-content: space-between;
-        /*padding: 60px 15px;
-        width: 1200px;*/
+       
     }
 }
 
@@ -38,7 +33,7 @@
     color: $hero-text-color;
 }
 .mail-form {
-    display: flex; 
+    //display: flex; 
     height: 50px;
 
     &::placeholder {

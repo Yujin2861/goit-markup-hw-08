@@ -1,15 +1,49 @@
 .clients-set {
     @extend %list;
-    display: flex;
-    justify-content: center; 
-    margin-left: -30px;
+    //justify-content: center; 
+    @media screen and (min-width: 480px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }    
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        margin: -15px;
+    }    
+    @media screen and (min-width: 1200px) {
+        margin: -15px;
+        //margin-left: -30px;
+    }    
+    
 }
 
 .clients-set__item {
-    width: calc((100% - 150px) / 6);
-    margin-left: 30px;
-}
+    //width: calc((100% - 150px) / 6);
+    //margin-left: 30px;
+    @media screen and (min-width: 480px) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+  
 
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 6 * 15px) / 3);
+        margin: 15px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+        //width: 33.3333%;
+        width: calc((100% - 12 * 15px) / 6);
+        margin: 15px; 
+    }
+    
+}
+.clients-title {
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
+}
 .clients-set__link {
     display: flex;
     justify-content: center;

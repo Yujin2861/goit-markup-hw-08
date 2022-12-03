@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css"/>
+    <!--<link rel="stylesheet" href="./css/style.css"/>-->
     <link rel="stylesheet" href="./css/main.min.css">
     
     
@@ -21,6 +21,21 @@
     <header class="page-header">
       <div class="container page-header__nav">  
         <a class="logo" href="">Web<span class="logo__text">Studio</span></a>
+        <button 
+          class="button-burger is-open" 
+          type="button" 
+          aria-expanded="false"
+          aria-controls="menu-box"
+          data-button-burger>
+          <svg width="40" height="40" aria-label="Переключатель">
+            <use class="icon-cross" href="./images/icons.svg#close-black-18dp"></use>
+            <use class="icon-menu" href="./images/icons.svg#menu_40px"></use>
+          </svg>
+        </button>
+        <div class="menu-box" id="menu-box" data-menu>
+          Контент меню
+
+        </div>
         <nav>
           <ul class="site-nav list">
             <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html">Студія</a></li>
@@ -394,7 +409,7 @@
       </section>
       <section class="section">
         <div class="container"> 
-          <h2 class="section-title">Постійні клієнти</h2>
+          <h2 class="section-title clients-title">Постійні клієнти</h2>
             <ul class="clients-set list">
               <li class="clients-set__item">
                 <a href="#" target="_blank" rel="noopener noreferrer" 
@@ -520,6 +535,7 @@
       </div>
     </footer>
     <script src="./js/model.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 

@@ -51,7 +51,7 @@ img {
 }
 
 .container {
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -85,12 +85,12 @@ img {
     border: 1px solid #ECECEC;
 }
 .page-header__nav {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
 }
 
 .site-nav {
-    display: flex;
+    /*display: flex;*/
     margin-left: 93px;
 }
 .site-nav__item:not(:last-child) {
@@ -131,7 +131,7 @@ img {
 
 /*ТЕДЕФОН ЄМЕІЛ ШАПКА*/
 .auth-nav {
-    display: flex;
+    /*display: flex;*/
     margin-left: auto;
 }
 
@@ -140,7 +140,7 @@ img {
 }
 
 .auth-nav__link {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     padding: 32px 0;
     color: var(--primery-text-color);
@@ -167,24 +167,24 @@ img {
     height: 16px;
 }
 
-/*.auth-nav .link::before {
-    height: 16px;
-    width: 16px;
-    
-    background-size: contain;
-    content: "";
-    margin-right: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+                                /*.auth-nav .link::before {
+                                    height: 16px;
+                                    width: 16px;
+                                    
+                                    background-size: contain;
+                                    content: "";
+                                    margin-right: 10px;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
 
-.auth-nav .link.tel::before {
-    background-image: url(../images/img-hw4/envelope-hover.svg);
+                                .auth-nav .link.tel::before {
+                                    background-image: url(../images/img-hw4/envelope-hover.svg);
 
-}
-.auth-nav .link.email::before {
-    background-image: url(../images/img-hw4/Vector.svg);
-}*/
+                                }
+                                .auth-nav .link.email::before {
+                                    background-image: url(../images/img-hw4/Vector.svg);
+                                }*/
 
 /*ГЕРОЙ*/
 
@@ -400,32 +400,20 @@ img {
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    /*text-align: center;*/
     letter-spacing: 0.06em;
     color:var(--hero-text-color);
-    /*background:var(--hero-button-hover);*/
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    /*border-radius: 4px;*/
-    /*border: none;*/
-    /*cursor: pointer;*/
-    /*transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 .button-hero {
     display: inline-block;
-    /*border-radius: 4px;*/
     padding: 10px 32px;
     min-width: 216px;
-    /*text-align: center;*/
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
     color:var(--hero-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    /*background-color: var(--accent-color);*/
-    /*cursor: pointer;*/
-    /*border: none;*/
-    /*transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -450,11 +438,7 @@ img {
     font-size: 16px;
     line-height: 1.625;
     background-color:var(--team-bg-color);
-    /*border-radius: 4px;*/
     color:var(--title-text-color);
-    /*cursor: pointer;
-    border: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 .button-portfolio__text:hover,
 .button-portfolio__text:focus {
@@ -472,12 +456,7 @@ img {
     display: flex;
     align-items: center;
     color: var(--hero-text-color);
-    /*background-color:var(--accent-color);*/
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    /*border-radius: 4px;*/
-    /*border: none;*/
-    /*cursor: pointer;*/
-    /*transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
 /*заголовок ПЕРЕВАГИ ЗХОВАВ*/ 
@@ -495,14 +474,12 @@ img {
 }
 
 /*заголовок ПЕРЕВАГИ*/
-/*.section-feature {
-    background-color: var(--hero-text-color);
-}*/
+
 .feature-set {
-    display: flex;
+    /*display: flex;*/
     margin-left: -30px;
-    /*gap: 30px;*/
-    /*flex-wrap: wrap;*/
+                                /*gap: 30px;*/
+                                /*flex-wrap: wrap;*/
 }
 
 .feature-set__item {
@@ -520,33 +497,33 @@ img {
     background-position: center;
 }
 
-/*
-.feature-list .item::before {
-    display: block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    /*background-image: url(../images/img-hw4/Group.svg);
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-}
-.icon-details::before {
-    background-image: url(../images/img-hw4/Group.svg);
-}
-.icon-punctuality::before {
-    background-image: url(../images/img-hw4/clock.svg);
-}
-.icon-planning::before {
-    background-image: url(../images/img-hw4/diagram.svg);
-}
-.icon-technology::before {
-    background-image: url(../images/img-hw4/astronaut.svg);
-}
-*/
+                            /*
+                            .feature-list .item::before {
+                                display: block;
+                                content: "";
+                                width: 270px;
+                                height: 120px;
+                                margin-bottom: 30px;
+                                /*background-image: url(../images/img-hw4/Group.svg);
+                                background-size: 70px;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-color: #F5F4FA;
+                                border-radius: 4px;
+                            }
+                            .icon-details::before {
+                                background-image: url(../images/img-hw4/Group.svg);
+                            }
+                            .icon-punctuality::before {
+                                background-image: url(../images/img-hw4/clock.svg);
+                            }
+                            .icon-planning::before {
+                                background-image: url(../images/img-hw4/diagram.svg);
+                            }
+                            .icon-technology::before {
+                                background-image: url(../images/img-hw4/astronaut.svg);
+                            }
+                            */
 .feature-set__title {
     margin-bottom: 10px;
     font-size: 14px;
@@ -580,17 +557,17 @@ img {
     color:var(--title-text-color);
 }
 
-.doing-set {   
+/*.doing-set {   
     display: flex;    
-}
+}*/
 
 .doing-set__item {
     position: relative;
 }
 .doing-set__box {
+    /*display: flex;*/
     position: absolute;
     background: rgba(47, 48, 58, 0.8);
-    display: flex;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -619,9 +596,9 @@ img {
 }
 
 .team-set {
-    display: flex; 
+    /*display: flex; */
     margin-left: -30px;
-    /*list-style: none;*/
+    
 } 
 
 .team-set__item {
@@ -662,12 +639,12 @@ img {
 }
 
 .sociale-set {
-    display: flex;
+    /*display: flex;*/
     justify-content: center;  
 }
-.sociale-set__item:not(:last-child) {
+/*.sociale-set__item:not(:last-child) {
     margin-right:10px;   
-}
+}*/
 .sociale-set__link {
     display: block;
     padding: 12px;
@@ -687,7 +664,7 @@ img {
 
 /*НАШИ КЛИЕНТЫ*/
 .clients-set {
-    display: flex;
+    /*display: flex;*/
     justify-content: center; 
     margin-left: -30px;
     
@@ -698,7 +675,7 @@ img {
 }
 
 .clients-set__link {
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     padding: 15px 31px;
     border: 1px solid var(--svg-color);
@@ -720,16 +697,11 @@ img {
     margin-bottom: 20px;
 }
 .footer {
-    /*display: flex;
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 252px;*/
     padding: 60px 0;
     background-color:var(--hero-bg-color);
 }
 .footer__container {
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
     /*padding: 60px 15px;
     width: 1200px;*/
@@ -755,7 +727,7 @@ img {
     color: var(--hero-text-color);
 }
 .mail-form {
-    display: flex; 
+    /*display: flex; */
     height: 50px;
 }
 

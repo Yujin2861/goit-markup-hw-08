@@ -13,25 +13,58 @@
 
 .feature-set {
     @extend %list;
-    display: flex;
-    margin-left: -30px;
-    /*gap: 30px;*/
-    /*flex-wrap: wrap;*/
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }    
+    @media screen and (min-width: 1200px) {
+        margin: -15px;
+        //margin-left: -30px;
+    }    
 }
 
 .feature-set__item {
-    margin-left: 30px;
-    width: calc((100% - 90px) / 4);
+    //margin-left: 30px;
+    //width: calc((100% - 90px) / 4);
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+        //width: 33.3333%;
+        width: calc((100% - 8 * 15px) / 4);
+        margin: 15px; 
+    }
+
+    &:not(:last-child) {
+    @media screen and (max-width: 767px){
+        margin-bottom: 30px;
+    }
+  }
 }
 
 .feature-set__box {
     background-color:$team-bg-color;
-    width: 270px;
-    height: 120px;
+    //width: 270px;
+    //height: 120px;
     padding: 25px 100px;
     border-radius: 4px;
     margin-bottom: 30px;
     background-position: center;
+    text-align: center;
+    
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }    
+    @media screen and (min-width: 768px) {
+        width: 354px;     
+    }
+    @media screen and (min-width: 1200px) {
+        width: 270px;     
+    }
+  
 }
 
 .feature-set__title {
@@ -41,6 +74,13 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:$title-text-color;
+
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .feature-set__description {
