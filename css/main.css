@@ -15,7 +15,7 @@ body {
 }
 
 /*СБРОС СТИЛЕЙ*/
-.filter-set, .buttons-portfolio, .footer-nav, .clients-set, .sociale-set, .team-set, .doing-set, .feature-set, .auth-nav, .site-nav {
+.filter-set, .buttons-portfolio, .footer-nav, .clients-set, .sociale-set, .team-set, .doing-set, .feature-set, .socile-box__link, .auth-nav, .site-nav {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -182,6 +182,9 @@ img {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+  .menu-box .auth-nav__icon {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-box {
@@ -200,11 +203,27 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .navigation {
+    margin-bottom: 306px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contactes {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav__item:not(:last-child) {
+    padding-bottom: 32px;
+  }
+}
+
 .site-nav__link {
   position: relative;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -229,7 +248,7 @@ img {
 .site-nav__link--current {
   color: #2196F3;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav__link {
     font-family: "Roboto";
     font-style: normal;
@@ -246,16 +265,28 @@ img {
 .auth-nav {
   margin-left: auto;
 }
+@media screen and (max-width: 767px) {
+  .auth-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
 
-.auth-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .auth-nav__item:not(:last-child) {
+    padding-top: 32px;
+  }
 }
 
 .auth-nav__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 32px 0;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
@@ -266,6 +297,26 @@ img {
 }
 .auth-nav__link:hover, .auth-nav__link:focus {
   color: #2196F3;
+}
+@media screen and (max-width: 767px) {
+  .auth-nav__link--tell {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+  }
+  .auth-nav__link--mail {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
 }
 
 .auth-nav__icon {

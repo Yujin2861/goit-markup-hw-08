@@ -57,8 +57,12 @@
         height: 100vh;
         transform: translateX(100%);
         transition: transform $cubic-bezier;
+
         &.is-open {
             transform: translateX(0);
+        }
+        .auth-nav__icon {
+            display: none;
         }
 
     }
@@ -71,7 +75,16 @@
         letter-spacing: 0.02em;
     }
 }
-
+.navigation {
+    @media screen and (max-width:767px){
+        margin-bottom: 306px;
+    }
+}
+.contactes {
+    @media screen and (max-width:767px){
+        margin-bottom: 64px;
+    }
+}
 .site-nav {
     @extend %list;
     //display: flex;
@@ -79,15 +92,20 @@
 }
 
 
-//.site-nav__item:not(:last-child){
+.site-nav__item:not(:last-child){
+    @media screen and (max-width:767px) {
+        padding-bottom: 32px;
+    }
+}
+
 //    margin-right: 50px;
 //}
 
 .site-nav__link {
     position: relative;
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    //padding-top: 32px;
+    //padding-bottom: 32px;
     color:$title-text-color;
     font-weight: 500;
     font-size: 14px;
@@ -112,7 +130,9 @@
     &--current {
         color: $accent-color;
     }
-    @media screen and (max-width:768px) {
+
+    
+    @media screen and (max-width:767px) {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -120,13 +140,8 @@
         line-height: 47px;
         letter-spacing: 0.02em;
         padding-top: 0;
-        text-align: left;
-        
-        
-
-
+        text-align: left;   
     }
-
 
 }
     
@@ -135,16 +150,26 @@
     @extend %list;
     //display: flex;
     margin-left: auto;
+    @media screen and (max-width:767px) 
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 .auth-nav__item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (max-width:767px) {
+        padding-top: 32px;
+    }
 }
+      //&:not(:last-child) {
+     //   margin-right: 50px;
+    //}
 
 .auth-nav__link {
     //display: flex;
     align-items: center;
-    padding: 32px 0;
+    //padding: 32px 0;
     color: $primery-text-color;
     font-weight: 500;
     font-size: 14px;
@@ -156,6 +181,29 @@
     &:focus {
     color: $accent-color;
     }
+
+    @media screen and (max-width:767px) {
+        
+    &--tell { font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: #2196F3;
+        
+    }
+    &--mail {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #757575;
+    }
+}
+
 }
 
 .auth-nav__icon {
@@ -167,4 +215,10 @@
     &--tel {
     height: 16px;
     }
+}
+
+
+
+.socile-box__link {
+    @extend %list;
 }
