@@ -65,6 +65,7 @@ img {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.1666;
+  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -89,10 +90,6 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.logo--footer {
-  display: inline-block;
-  margin-bottom: 20px;
-}
 
 .logo__text {
   color: #000000;
@@ -107,6 +104,18 @@ img {
   border: 1px solid #ECECEC;
   position: relative;
 }
+.page-header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 60px;
+}
 
 .button-burger {
   background-color: transparent;
@@ -116,6 +125,16 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  position: relative;
+  z-index: 50;
+}
+@media screen and (min-width: 768px) {
+  .button-burger {
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .button-burger .icon-cross {
@@ -131,26 +150,54 @@ img {
 }
 
 .menu-box {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: palegoldenrod;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
+  background-color: #FFFFFF;
+  padding: 48px 40px;
 }
-.menu-box.is-open {
-  display: block;
+@media screen and (max-width: 767px) {
+  .menu-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-box.is-open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
-
-.site-nav {
-  margin-left: 93px;
-}
-
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .menu-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .site-nav__link {
@@ -181,6 +228,18 @@ img {
 }
 .site-nav__link--current {
   color: #2196F3;
+}
+@media screen and (max-width: 768px) {
+  .site-nav__link {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    padding-top: 0;
+    text-align: left;
+  }
 }
 
 /*ТЕДЕФОН ЄМЕІЛ ШАПКА*/
