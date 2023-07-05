@@ -152,7 +152,6 @@ img {
 .menu-box {
   background-color: #FFFFFF;
   padding: 48px 40px;
-  max-height: 796px;
 }
 @media screen and (max-width: 767px) {
   .menu-box {
