@@ -19,12 +19,13 @@
     padding: 0;
     border: none;
     display: inline-flex;
-    position: relative;
-    z-index: 50;
+    //position: relative;
+    //z-index: 50;
+
 
     @media screen and (min-width: 768px) {
         display: none;
-        align-items: center;
+        //align-items: center;
     }
 }
 
@@ -40,26 +41,32 @@
 .menu-box {
     background-color: $hero-text-color;
     padding: 48px 40px;
+    
     //text-align: center;
     //font-size: 20px;
     
-
     @media screen and (max-width:767px) {
-        //display: none;
-        display: flex;
+        display: none;
+        //display: flex;
+        position: absolute;
         flex-direction: column;
-        justify-content: space-between;
-        gap: 20px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100vw;
-        height: 100vh;
-        transform: translateX(100%);
-        transition: transform $cubic-bezier;
-
+        //justify-content: space-between;
+        //gap: 20px;
+        //position: fixed;
+        top:100%;
+        left: 0;
+        //top: 0;
+        //right: 0;
+        //width: 100vw;
+        //height: 100vh;
+        //height: 796px;
+        width: 100%;
+        //transform: translateX(-100%);
+        //transition: transform $cubic-bezier;
+        
         &.is-open {
-            transform: translateX(0);
+            display: block;
+            //transform: translateX(0);
         }
         .auth-nav__icon {
             display: none;
@@ -83,6 +90,11 @@
 .contactes {
     @media screen and (max-width:767px){
         margin-bottom: 64px;
+    }
+}
+.socile-box {
+    @media screen and (min-width:768px){
+        display: none;
     }
 }
 .site-nav {
