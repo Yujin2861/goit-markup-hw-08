@@ -792,7 +792,6 @@ img {
 }
 
 .team-set {
-  /*display: flex; */
   margin-left: -30px;
 }
 
@@ -806,6 +805,11 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+/*.team-set__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}*/
 .comand-box {
   padding: 30px 32px;
   background-color: #FFFFFF;
@@ -1009,9 +1013,6 @@ img {
 @media screen and (max-width: 767px) {
   .mail-form {
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1059,6 +1060,7 @@ img {
   .mail-form__input {
     height: 50px;
     margin-bottom: 20px;
+    width: 450px;
   }
 }
 
@@ -1076,7 +1078,6 @@ img {
   min-width: 200px;
   position: relative;
   margin-left: 12px;
-  padding-left: 28px;
   padding-right: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
